@@ -7,3 +7,9 @@ Currently, I am in my last semester of my Computer Programming & Development Ass
 
 2. What do you hope to achieve?
 I hope to graduate with this degree with a 4.0 GPA, and feel ready to move on into the workforce or in the near future, continue with my education. In the immediate term, I hope to become an even better coder in C++ and fully understand data structures.
+
+
+### Personal Info
+Collaborators for Capstone (CSC 289): 
+- Joshua Carter, carterj7383
+- Alya Saleh, Saleha5602
