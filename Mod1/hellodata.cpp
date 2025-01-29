@@ -16,6 +16,7 @@ using namespace std;
 int main() {
     // Explain in easy terms
     cout << "Explain like I'm 10" << endl;
+    
 
     vector<int> toyBoxes; // Create an empty vector to hold integers
 
