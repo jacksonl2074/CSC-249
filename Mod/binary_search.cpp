@@ -1,3 +1,10 @@
+/*
+Laura K. Jackson
+CSC 249
+2.L2 - Binary Search
+2.22.2025
+*/
+
 #include <iostream>
 using namespace std;
 

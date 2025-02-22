@@ -1,3 +1,10 @@
+/*
+Laura K. Jackson
+CSC 249
+2.L1 - Linear Search
+2.22.2025
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -11,7 +18,7 @@ double LinearSearch(double* numbers, double numbersSize, double key) {
 }
 
 int main() {
-   double numbers[] = { 2.3, 4.5, 7.1, 10.0, 11.7, 32.4, 45.8, 87.9 };
+   double numbers[] = { 2.3, 4.5, 7.1, 10.6, 11.7, 32.4, 45.8, 87.9 };
    int numbersSize = sizeof(numbers) / sizeof(numbers[0]);
    cout << "NUMBERS: [" << numbers[0];
    for (int i = 1; i < numbersSize; i++) {
