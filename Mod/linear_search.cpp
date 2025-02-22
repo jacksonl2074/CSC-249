@@ -27,7 +27,7 @@ int main() {
    cout << "]" << endl;
       
    // Prompt for an double to search for
-   cout << "Enter a double value: ";
+   cout << "Enter a value: ";
    double key = 0.0;
    cin >> key;
 
