@@ -1,10 +1,3 @@
-/*
-Laura K. Jackson
-CSC 249
-2.L2 - Binary Search
-2.22.2025
-*/
-
 #include <iostream>
 using namespace std;
 
@@ -44,7 +37,7 @@ int main() {
    }
    cout << "]" << endl;
       
-   // Prompt for a double to search for
+   // Prompt for a value to search for
    cout << "Enter a value: ";
    double key = 0.0;
    cin >> key;
