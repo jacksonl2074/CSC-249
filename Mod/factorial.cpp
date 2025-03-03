@@ -17,7 +17,7 @@ int factNum(int n){
 }
 
 // calculating factorial of n using recursion
-// FIXME: delete "else" clause?
+// could delete the "else" and leave the return statement (cleaner code)
 int factorial(int n){
     if (n == 0 || n == 1){
         return 1;
