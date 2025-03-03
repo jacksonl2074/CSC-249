@@ -1,7 +1,7 @@
 /*
 Laura K. Jackson
 CSC 249
-2.h1 - Binary Search: Iteratively & Recursively
+2.H1 - Binary Search: Iteratively & Recursively
 3.2.2025
 */
 

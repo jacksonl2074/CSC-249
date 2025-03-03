@@ -29,14 +29,19 @@ int factorial(int n){
 
 // main function
 int main(){
-    int num = 5;
+  
+    // have user enter a number to calculate its factorial
+    cout << "Enter a positive number: ";
+    int num = 0;
+    cin >> num;
+
     // iterative (for loop) 
-    cout << "Using a for loop ";
+    cout << "Using iteration... ";
     cout << "Factorial of " << num << " is " << factorial(num) << endl;
 
     // recursion
-    cout << "Using recursion ";
-    cout << "Factorial of " << num << " is " << factorial(num) << endl;
+    cout << "Using recursion... ";
+    cout << "Factorial of " << num << " is " << factNum(num) << endl;
 
     return 0;
 }
