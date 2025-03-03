@@ -10,9 +10,9 @@ using namespace std;
 
 // calculating factorial of n using a for loop
 int factNum(int n){
-    int result = 1;
-    for (int i = 2; i <= n; i++)
-        result = result * i;
+    int result = 1;     // initialize to 1, not 0
+    for (int i = 2; i <= n; i++)    // i=2 because n * 1 will always equal 1
+        result = result * i;    // result *= i
     return result;
 }
 
@@ -23,7 +23,7 @@ int factorial(int n){
         return 1;
     }
     else {
-        return n * factorial(n - 1);
+        return n * factorial(n - 1);    // recursion
     }
 }
 
