@@ -14,22 +14,22 @@ int main(int argc, char* argv[]) {
    ArrayStack unboundedStack;
     
    // Push 8 items to each
-   cout << "Pushing values 1 through 8 to each stack" << endl;
-   for (int i = 1; i <= 8; i++) {
+   cout << "Pushing values 1 through 10 to each stack" << endl;
+   for (int i = 1; i <= 10; i++) {
       boundedStack.Push(i);
       unboundedStack.Push(i);
    }
    
    // Pop two items off each stack
-   cout << "Popping twice" << endl;
-   for (int i = 0; i < 2; i++) {
+   cout << "Popping thrice" << endl;
+   for (int i = 0; i < 3; i++) {
       boundedStack.Pop();
       unboundedStack.Pop();
    }
 
    // Push 4 more items onto each stack
-   cout << "Pushing values to each stack: 10, 20, 30 and 40" << endl;
-   for (int i = 10; i <= 40; i += 10) {
+   cout << "Pushing values to each stack: 5, 10, 15 and 20" << endl;
+   for (int i = 5; i <= 20; i += 5) {
       boundedStack.Push(i);
       unboundedStack.Push(i);
    }
