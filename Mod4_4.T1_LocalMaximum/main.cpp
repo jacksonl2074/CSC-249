@@ -18,7 +18,7 @@ int main(){
     int current_max = values[0]; // start with the first value
 
     cout << "V = ";
-    for (int i=0; i << SIZE; i++){
+    for (int i=0; i < SIZE; i++){
         cout << values[i] << " ";
     }
     cout << endl;
