@@ -1,3 +1,9 @@
+/*
+Laura K. Jackson
+CSC 249 - 3.L1 The Stack (From 3.18 Zybooks)
+3.16.2025
+*/
+
 #include <iostream>
 #include "arraystack.h"
 using namespace std;
