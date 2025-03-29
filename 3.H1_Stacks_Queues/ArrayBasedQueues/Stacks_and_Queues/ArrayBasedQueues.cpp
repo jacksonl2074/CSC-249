@@ -15,8 +15,8 @@ int main() {
    ArrayQueue unboundedQueue;
         
    // Enqueue 8 items in each
-   cout << "Enqueueing values 1 through 8 to each queue" << endl;
-   for (int i = 1; i <= 8; i++) {
+   cout << "Enqueueing values 1 through 7 to each queue" << endl;
+   for (int i = 1; i <= 7; i++) {
       boundedQueue.Enqueue(i);
       unboundedQueue.Enqueue(i);
    }
@@ -31,8 +31,8 @@ int main() {
    }
 
    // Enqueue 4 more items
-   cout << "Enqueueing values: 10, 20, 30 and 40" << endl;
-   for (int i = 10; i <= 40; i+=10) {
+   cout << "Enqueueing values: 5, 10, 15 and 25" << endl;
+   for (int i = 5; i <= 25; i+=5) {
       boundedQueue.Enqueue(i);
       unboundedQueue.Enqueue(i);
    }
