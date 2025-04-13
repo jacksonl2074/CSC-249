@@ -24,23 +24,25 @@ void numberGuesser (){
     cout << "You have chosen the Number Guesser!" << endl;
     cout << "You are going to think of a number between 0 and 99,";
     cout << " and I will try to guess your number in 5 attempts or less." << endl;
-    cout << "If I've guessed your number, please type =" << endl;
-    cout << "If I've guessed too low, please type >" << endl;
-    cout << "If I've guessed too high, please type <" << endl;
+    cout << "If I've guessed your number, please type '='." << endl;
+    cout << "If I need to guess higher, please type '>'." << endl;
+    cout << "If I need to guess lower, please type '<'." << endl;
     
-
-    // maybe change to just !=found ?
-    while (numGuesses < MAX_GUESSES && guess != found){
+    mid = 50;        // first num computer guesses is 50
+    // 
+    while (numGuesses < MAX_GUESSES && !found){
+        
         numGuesses++;           // increment guess counter
 
         // start at mid point
         cout << "Guess #" << numGuesses << ": " ;
-        cout << "Is your number 50? " << endl;
+        cout << "Is your number " << mid  << endl;
         // user enters =, >, or <
         cin >> userResponse;
 
         if (userResponse == '='){
-            cout << "Great! I guess your number on the first try!" << endl;
+            cout << "Great! I guessed your number!" << endl;
+            found = true;
         } else if (userResponse == '<'){
             high = mid - 1;     
         } else if (userResponse == '>'){
@@ -49,6 +51,7 @@ void numberGuesser (){
             cout << "Invalid response. Please enter =, <, or >." << endl;
             numGuesses--;              // decrement num guesses to not count invalid responses
         }
+        mid = (low + high) / 2;
     }
     
 
