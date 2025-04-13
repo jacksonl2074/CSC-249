@@ -13,6 +13,8 @@ void numberGuesser (){
     // variables
     int low = 0;
     int high = 99;
+    int mid;                        // Do i need this?
+    int guess;                      // number 
     int numGuesses = 0;             // num to keep track of guesses
     const int MAX_GUESSES = 5;      // constant var for Max num of guesses
     char userResponse;     // variable for user's input of =, >, <
@@ -21,15 +23,32 @@ void numberGuesser (){
     // tell user how the game is set up
     cout << "You have chosen the Number Guesser!" << endl;
     cout << "You are going to think of a number between 0 and 99,";
-    cout << " and I will try to guess your number in 5 attempts." << endl;
+    cout << " and I will try to guess your number in 5 attempts or less." << endl;
     cout << "If I've guessed your number, please type =" << endl;
     cout << "If I've guessed too low, please type >" << endl;
     cout << "If I've guessed too high, please type <" << endl;
-    cout << "Is your number 50? " << endl;
+    
 
-    while (numGuesses != MAX_GUESSES && userResponse != found){
+    // maybe change to just !=found ?
+    while (numGuesses < MAX_GUESSES && guess != found){
+        numGuesses++;           // increment guess counter
+
+        // start at mid point
+        cout << "Guess #" << numGuesses << ": " ;
+        cout << "Is your number 50? " << endl;
         // user enters =, >, or <
         cin >> userResponse;
+
+        if (userResponse == '='){
+            cout << "Great! I guess your number on the first try!" << endl;
+        } else if (userResponse == '<'){
+            high = mid - 1;     
+        } else if (userResponse == '>'){
+            low = mid + 1;
+        } else {
+            cout << "Invalid response. Please enter =, <, or >." << endl;
+            numGuesses--;              // decrement num guesses to not count invalid responses
+        }
     }
     
 
