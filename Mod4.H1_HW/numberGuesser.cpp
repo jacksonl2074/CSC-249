@@ -36,7 +36,7 @@ void numberGuesser (){
 
         // start at mid point
         cout << "Guess #" << numGuesses << ": " ;
-        cout << "Is your number " << mid  << endl;
+        cout << "Is your number " << mid  << "? " ;
         // user enters =, >, or <
         cin >> userResponse;
 
