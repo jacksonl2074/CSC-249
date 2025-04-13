@@ -1,8 +1,8 @@
 /*
 Laura K. Jackson
 CSC 249
-2.L2 - Binary Search
-2.22.2025
+4.H1 - Binary Search portion
+4.13.2025
 */
 
 #include <iostream>
@@ -36,12 +36,20 @@ int BinarySearch(int* numbers, int numbersSize, int key) {
 }
 
 int main() {
-   // int numbers[] = { 2.3, 4.5, 7.1, 10.6, 11.7, 32.4, 45.8, 87.9 };
-   // start with empty vector
-   int numbers[] = {};
+   
+   // start with empty vector of 8 numbers
+   int numbers[8];
    int numbersSize = sizeof(numbers) / sizeof(numbers[0]);
 
    // take user's input for nums in vector
+   for (int i=0; i < numbersSize; i++){
+    cout << "Enter number " << i + 1 << ": ";
+    cin >> numbers[i];
+   }
+   cout << "]" << endl;
+
+
+   // display numbers user entered
    cout << "NUMBERS: [" << numbers[0];
    for (int i = 1; i < numbersSize; i++) {
       cout << ", " << numbers[i];
