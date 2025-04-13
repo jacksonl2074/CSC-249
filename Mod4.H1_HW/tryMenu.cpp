@@ -4,12 +4,14 @@
 
 using namespace std;
 
+// main function to display menu to user 
+// and they chose an option
 int main() {
     int choice;
     do {
         cout << "\nMenu:" << endl;
-        cout << "1. Option 1" << endl;
-        cout << "2. Option 2" << endl;
+        cout << "1. Binary Search Demo" << endl;
+        cout << "2. Binary Guess the Number Game" << endl;
         cout << "3. Exit" << endl;
         cout << "Enter your choice: ";
 
@@ -28,8 +30,10 @@ int main() {
                     cout << "Invalid choice. Please enter 1, 2, or 3." << endl;
             }
         } else {
+            // input validation 
             cout << "Invalid input. Please enter a number." << endl;
-            cin.clear();
+            cin.clear();        // clears error of user's input
+            // discards invalid input from user
             cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
         }
     } while (choice != 3);
