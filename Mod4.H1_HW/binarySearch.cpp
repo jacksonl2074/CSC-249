@@ -35,7 +35,7 @@ int BinarySearch(int* numbers, int numbersSize, int key) {
    return -1; // not found
 }
 
-int main() {
+int numbers() {
    
    // start with empty vector of 8 numbers
    int numbers[8];

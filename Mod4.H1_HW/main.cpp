@@ -1,6 +1,7 @@
 #include <iostream>
 #include <limits>
 #include <string>
+#include "functions.h"      // header file for functions
 
 using namespace std;
 
