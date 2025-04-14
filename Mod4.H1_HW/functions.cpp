@@ -1,4 +1,5 @@
 #include <iostream>
+#include "functions.h"
 using namespace std;
 
 int BinarySearch(int* numbers, int numbersSize, int key) {
@@ -72,7 +73,7 @@ void numberGuesser (){
     int numGuesses = 0;             // num to keep track of guesses
     const int MAX_GUESSES = 5;      // constant var for Max num of guesses
     char userResponse;     // variable for user's input of =, >, <
-    bool found = false;     // variable to track if computer correctly guessed user's num
+    bool found = false;     // flag to track if computer correctly guessed user's num
 
     // tell user how the game is set up
     cout << "You have chosen the Number Guesser!" << endl;
