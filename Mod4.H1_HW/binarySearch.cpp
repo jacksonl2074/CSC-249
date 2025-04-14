@@ -35,7 +35,7 @@ int BinarySearch(int* numbers, int numbersSize, int key) {
    return -1; // not found
 }
 
-int numbers() {
+int main() {
    
    // start with empty vector of 8 numbers
    int numbers[8];
@@ -46,7 +46,7 @@ int numbers() {
     cout << "Enter number " << i + 1 << ": ";
     cin >> numbers[i];
    }
-   cout << "]" << endl;
+   
 
 
    // display numbers user entered
@@ -58,7 +58,7 @@ int numbers() {
       
    // Prompt for an integer to search for
    cout << "Enter a value: ";
-   int key = 0.0;
+   int key = 0;
    cin >> key;
       
    int keyIndex = BinarySearch(numbers, numbersSize, key);
@@ -70,3 +70,13 @@ int numbers() {
       cout << keyIndex << "." << endl;
    }
 }
+/*
+int main() {
+   // Call the number search function
+   numbers();
+   
+   return 0;
+}
+   */
+// int BinarySearch(int* numbers, int numbersSize, int key);
+// void numbers();

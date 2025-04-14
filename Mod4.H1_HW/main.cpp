@@ -43,8 +43,7 @@ int BinarySearch(int* numbers, int numbersSize, int key) {
      cout << "Enter number " << i + 1 << ": ";
      cin >> numbers[i];
     }
-    cout << "]" << endl;
- 
+    
  
     // display numbers user entered
     cout << "NUMBERS: [" << numbers[0];
