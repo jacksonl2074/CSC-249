@@ -41,14 +41,13 @@ int main() {
    int numbers[8];
    int numbersSize = sizeof(numbers) / sizeof(numbers[0]);
 
-   // take user's input for nums in vector
+   // take user's input for nums in vector in sorted order
+   cout << "Please enter 8 numbers in ascending order." << endl;
    for (int i=0; i < numbersSize; i++){
     cout << "Enter number " << i + 1 << ": ";
     cin >> numbers[i];
    }
    
-
-
    // display numbers user entered
    cout << "NUMBERS: [" << numbers[0];
    for (int i = 1; i < numbersSize; i++) {
@@ -57,7 +56,7 @@ int main() {
    cout << "]" << endl;
       
    // Prompt for an integer to search for
-   cout << "Enter a value: ";
+   cout << "Enter a value to search for: ";
    int key = 0;
    cin >> key;
       
