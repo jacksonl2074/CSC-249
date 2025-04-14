@@ -43,6 +43,7 @@ void numberGuesser (){
         if (userResponse == '='){
             cout << "Great! I guessed your number!" << endl;
             found = true;
+            cout << "It took me " << numGuesses << " guesses." << endl;
         } else if (userResponse == '<'){
             high = mid - 1;     
         } else if (userResponse == '>'){
@@ -52,6 +53,10 @@ void numberGuesser (){
             numGuesses--;              // decrement num guesses to not count invalid responses
         }
         mid = (low + high) / 2;
+    }
+    // if the computer didn't guess the number in 5 attempts
+    if (!found){
+        cout << "Unfortunately, I couldn't guess your number in 5 attempts." << endl;
     }
     
 
